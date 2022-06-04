@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Galeria de Artes</title>
+</head>
+
+<body>
+    <main>
+        <h2>Lista de Obras</h2>
+
+        <label for="fields">Filtrar por:</label>
+        <select id="fields" onchange="menu(this.value)">
+            <option value="all">Mostrar tudo</option>
+            <option value="title">Título</option>
+            <option value="artist_title">Autor</option>
+            <option value="date_start">Ano</option>
+        </select>
+    
+        <table id="content"></table>
+    </main>
+
+    <!-- scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="remote-api-fetch.js"></script>
+</body>
+
+</html>

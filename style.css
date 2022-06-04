@@ -1,0 +1,29 @@
+body {
+  font-family: arial, sans-serif;
+}
+
+main {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table {
+  margin-top: 20px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+img {
+  width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
