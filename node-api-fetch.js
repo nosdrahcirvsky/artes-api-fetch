@@ -42,7 +42,7 @@ function getAll() {
                 $("#content").append("<tbody id='items'></tbody>");
                 $("#content").append("<input type='hidden' id='yearOrder' value='asc'>");
 
-                json.data.forEach(element => {
+                json.forEach(element => {
                     $("#content #items").append(
                         `
                         <tr>
@@ -56,7 +56,7 @@ function getAll() {
 
             });
         } else {
-            console.log("Oops, we haven't got JSON!");
+            console.log("O resultado retornado não está em JSON");
         }
     });
 }
@@ -78,7 +78,7 @@ function searchBy(field, fieldDisplay) {
                 $("#content").html(`<tr><th>${fieldDisplay}</th></tr>`);
 
                 // Laço que percorre cada elemento do array em JSON retornado pela API
-                json.data.forEach(element => {
+                json.forEach(element => {
                     // O parâmetro field é usado novamente para especificar o nome do campo escolhido no menu de select
                     $("#content").append(`<tr><td>${element[field]}</td></tr>`);
                 });
@@ -86,7 +86,7 @@ function searchBy(field, fieldDisplay) {
             });
         } else {
             // Mensagem de erro padrão para quando o conteúdo retornado pela API não estiver em JSON
-            console.log("Oops, we haven't got JSON!");
+            console.log("O resultado retornado não está em JSON");
         }
     });
 }
