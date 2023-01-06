@@ -2,7 +2,7 @@
 
 Projeto solicitado para a vaga de estágio da Marques Consult.
 
-- Aplicante: David Richardson
+- Candidato: David Richardson
 
 ## Uso
 
